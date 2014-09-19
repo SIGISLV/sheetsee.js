@@ -1,0 +1,20 @@
+ #map, #shapesmap {
+ 	max-width: 800px;
+ 	height: 500px;
+}
+
+.leaflet-popup-content li {
+	list-style:none;
+}
+
+.leaflet-popup-content {
+	width: 102px;
+}
+
+.leaflet-popup-content img {
+	width: 100px;
+}
+
+a {
+	border: none;
+}
