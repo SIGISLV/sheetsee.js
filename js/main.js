@@ -52,8 +52,8 @@ var app = function() {
         });
         tileLayer.addTo(map);
 
-        //var URL = "1kJXeT7UhunqxBxWEIKMQnoOV1UgXQFeChHqPQol4Yv0";
-        var URL = "1wmVzpalqTLOEPnOs97KWex3GVPqiNCx84zn4Dbw7eF4";
+        var URL = "1kJXeT7UhunqxBxWEIKMQnoOV1UgXQFeChHqPQol4Yv0";
+        //var URL = "1wmVzpalqTLOEPnOs97KWex3GVPqiNCx84zn4Dbw7eF4";
         tabletop = Tabletop.init({
             key: URL,
             callback: showInfo()
