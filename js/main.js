@@ -42,10 +42,18 @@ var app = function() {
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        map = Sheetsee.loadMap("map", {
+        map = Sheetsee.loadMap("map");
+        
+        map.touchZoom.enable()
+        map.doubleClickZoom.enable()
+        map.scrollWheelZoom.enable()
+        /*, {
             touchZoom: true,
-            tap: true
+            tap: true,
+            scrollWheelZoom: true,
+            doubleClickZoom: true
         });
+        */
         // Removed below because need a reference to a mapbox map instead of a simple URL
         // test = Sheetsee.addTileLayer(map, 'examples.map-20v6611k');
         var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
